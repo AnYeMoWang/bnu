@@ -8,7 +8,7 @@ def lesson(request):
     current_type = 'lesson'
     page = request.GET.get('page', 1)
     queryset = ParentLessons.objects.all().order_by('-submit_time')
-    result = _paginator_result(queryset, page, per_page=15)
+    result = _paginator_result(queryset, page, per_page=9)
     page_max_show = 10
     resp = {
         'result': result,
@@ -28,7 +28,7 @@ def child_lesson(request, parent_id):
     queryset = ChildLessons.objects.filter(
         parent__id=parent_id
     ).order_by('-submit_time')
-    result = _paginator_result(queryset, page, per_page=25)
+    result = _paginator_result(queryset, page, per_page=15)
     page_max_show = 10
     resp = {
         'result': result,
@@ -46,7 +46,7 @@ def exercise(request):
     current_type = 'exercise'
     page = request.GET.get('page', 1)
     queryset = Exercise.objects.all().order_by('-submit_time')
-    result = _paginator_result(queryset, page, per_page=15)
+    result = _paginator_result(queryset, page, per_page=10)
     page_max_show = 10
     resp = {
         'result': result,
@@ -65,7 +65,7 @@ def doc(request):
     current_inner = 'doc'
     page = request.GET.get('page', 1)
     queryset = Doc.objects.all().order_by('-submit_time')
-    result = _paginator_result(queryset, page, per_page=15)
+    result = _paginator_result(queryset, page, per_page=10)
     page_max_show = 10
     resp = {
         'result': result,
@@ -85,7 +85,7 @@ def frame(request):
     current_inner = 'frame'
     page = request.GET.get('page', 1)
     queryset = Frame.objects.all().order_by('-submit_time')
-    result = _paginator_result(queryset, page, per_page=15)
+    result = _paginator_result(queryset, page, per_page=10)
     page_max_show = 10
     resp = {
         'result': result,

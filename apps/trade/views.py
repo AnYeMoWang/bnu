@@ -23,7 +23,7 @@ def index(request):
         queryset = modal.objects.filter(
             type=int_type
         ).order_by('-submit_time')
-    result = _paginator_result(queryset, page, per_page=15)
+    result = _paginator_result(queryset, page, per_page=10)
     page_max_show = 10
     resp = {
         'result': result,
