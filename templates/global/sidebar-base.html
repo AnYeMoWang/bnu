@@ -1,0 +1,18 @@
+<div id="secondary" class="widget-area">
+	<aside id="categories-4" class="widget widget_categories">
+		<!-- <h1 class="widget-title">栏目</h1> -->
+		<ul>
+			<li class="cat-item {% if current_type == 'all' %}current-cat{% endif %}">
+				<a href="/{{path}}?type=all">全部</a>
+			</li>
+			{% for pt in choices %}
+			{% if pt == '全部' %}
+			{% else %}
+			<li class="cat-item {% if current_type == pt %}current-cat{% endif %}">
+				<a href="/{{path}}?type={{pt}}">{{pt}}</a>
+			</li>
+			{% endif %}
+			{% endfor %}
+		</ul>
+	</aside>
+</div>

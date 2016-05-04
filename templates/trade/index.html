@@ -1,0 +1,82 @@
+{% extends 'global/base.html' %} 
+{% block title %} 实践展示 {% endblock %} 
+{% block 3rd_css %}
+<style type="text/css">
+    img.wp-smiley,
+    img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 .07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+    }
+
+</style>
+{% endblock %} 
+{% block bodyClass %}
+archive category category-activity category-5 group-blog
+{% endblock %}
+{% block content %}
+<div id="content" class="site-content">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+            {% include 'global/trade-page-header.html' %}
+            <div class="container">
+                <div id="archive-content" class="clear">
+                    {% include 'global/sidebar-base.html' %}
+                    <div class="page-content">
+                        {% for p in result %}
+                        <article class="post-632 post type-post status-publish format-standard has-post-thumbnail hentry category-news">
+                            <header class="entry-header">
+                                <div class="entry-logo">
+                                <i class="fa fa-newspaper-o"></i>
+                                </div>
+                                <h1 class="entry-title">
+                                    <a href="/{{path}}/article?id={{p.id}}">{{p.title}}</a>
+                                </h1>
+                                <div class="entry-meta">
+                                    <span class="posted-on">
+                                        <i class="fa fa-calendar-o"></i>
+                                        <time class="entry-date published">{{p.submit_time}}</time>
+                                    </span>
+                                    <span class="byline">
+                                        <span class="author vcard">
+                                            <i class="fa fa-folder-o"></i>
+                                            {{p.get_type_display}}
+                                        </span>
+                                    </span>
+                                    <span class='views'>
+                                        <i class='fa fa-eye'></i>
+                                        {{p.view_count}}&nbsp;浏览
+                                    </span>
+                                </div>
+                            </header>
+                            <div class="entry-content">
+                                {{p.content|truncatewords_html:50|safe}}
+                                <p>
+                                    <a href='/{{path}}/article?id={{p.id}}'  class="more-link">
+                                    继续阅读
+                                    <span class="screen-reader-text">&#8220;心随鸽舞，公益先行——白鸽青年志愿者协会2015-2016学年度全员大会圆满举办&#8221;</span>
+                                    <span class="meta-nav">&rarr;</span>
+                                    </a>
+                                </p>
+                            </div>
+                            <footer class="entry-footer"></footer>
+                        </article>
+                        
+                        {% endfor %}
+                        {% include 'global/paginator.html'%}
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+{% endblock %} {% block js %} 
+{% endblock %}
+

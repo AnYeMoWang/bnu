@@ -1,0 +1,146 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        {% block title %}{% endblock %}
+    </title>
+    <link rel='stylesheet' id='dashicons-css'  href='/static/css/dashicons.min.css?ver=4.3.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='elusive-css'  href='/static/css/elusive.min.css?ver=2.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='font-awesome-css'  href='/static/css/font-awesome.min.css?ver=4.4.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='foundation-icons-css'  href='/static/css/foundation-icons.min.css?ver=3.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='genericon-css'  href='/static/css/genericons.min.css?ver=3.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='menu-icons-extra-css'  href='/static/css/extra.min.css?ver=0.8.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='cptch_stylesheet-css'  href='/static/css/style.css?ver=4.3.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='baidu-maps-style-frontend-css'  href='/static/css/frontend.css?ver=4.3.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='wp-pagenavi-css'  href='/static/css/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+    <link rel='stylesheet' id='baige-style-css'  href='/static/css/style(1).css?ver=4.3.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='baige-layout-css'  href='/static/css/baige.css?ver=4.3.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='/static/css/main.css' type='text/css' media='all' />
+    {# 第三方插件样式文件 #} {% block 3rd_css %}{% endblock %}
+</head>
+
+<body class="{% block bodyClass %}{% endblock %}">
+    <!--header-->
+    <header id="masthead" class="site-header" role="banner">
+        <div class="container clear">
+            <div class="site-branding">
+                <h1 class="site-title"><a href="/index" rel="home"><img src="/static/img/logo.png"></a></h1>
+                <!-- 让世界变明亮 -->
+            </div><!-- .site-branding -->
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <div class="menu-main-container">
+                    <ul id="menu-main" class="menu">
+                        <li>
+                            <a href="/index">首页</a>
+                        </li>
+                        <li>
+                            <a href="/trade">最新动态</a>
+                            <ul class="sub-menu">
+                                <li><a href="/trade/?type=新闻">新闻</a></li>
+                                <li><a href="/trade/?type=公告">公告</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/practice">实践内容</a>
+                            <ul class="sub-menu">
+                                <li><a href="/practice/?type=弘文励教">弘文励教</a></li>
+                                <li><a href="/practice/?type=社会观察">社会观察</a></li>
+                                <li><a href="/practice/?type=美丽中国">美丽中国</a></li>
+                                <li><a href="/practice/?type=职涯体验">职涯体验</a></li>
+                                <li><a href="/practice/?type=铭记历史">铭记历史</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/share" style="width:100px;text-align:center ">分享平台</a>
+                            <ul class="sub-menu">
+                                <li><a href="/share/lesson">网络课程</a></li>
+                                <li><a href="/share/exercise/">实践风采</a></li>
+                                <li><a href="/share/datum/">支教资料库</a></li>
+                                <li><a href="/share/downloads/">常用下载</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="/admin"><i class="_mi _before dashicons dashicons-admin-users"></i><span>登录</span></a></li>
+                    </ul>
+                </div>
+            </nav><!-- #site-navigation -->
+        </div>
+    </header><!-- #masthead -->
+    {# 页面内容 #} {% block content %}{% endblock %}
+
+    <footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="container-b clear">
+        <div class="site-info clear">
+            <ul class="footer-list clear">
+                <li id="menu-item-296" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-296"><a href="/practice">实践内容</a>
+                    <ul class="sub-menu">
+                        <li id="menu-item-301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-301"><a href="/practice/?type=弘文励教">弘文励教</a></li>
+                        <li id="menu-item-300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-300"><a href="/practice/?type=社会观察">社会观察</a></li>
+                        <li id="menu-item-299" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-299"><a href="/practice/?type=美丽中国">美丽中国</a></li>
+                        <li id="menu-item-298" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-298"><a href="/practice/?type=职涯体验">职涯体验</a></li>
+                        <li id="menu-item-297" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-297"><a href="/practice/?type=铭记历史">铭记历史</a></li>
+                    </ul>
+                </li>
+                <li id="menu-item-302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-302"><a href="/share">分享平台</a>
+                    <ul class="sub-menu">
+                        <li id="menu-item-303" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-303"><a href="/share/lesson">网络课程</a></li>
+                        <li id="menu-item-304" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-304"><a href="/share/exercise/">实践风采</a></li>
+                        <li id="menu-item-305" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-305"><a href="/share/datum/">支教资料库</a></li>
+                        <li id="menu-item-306" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-306"><a href="/share/downloads/">常用下载</a></li>
+                    </ul>
+                </li>
+                <li id="menu-item-312" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-312">
+                    <a>友情链接</a>
+                    <ul class="sub-menu">
+                        <li id="menu-item-313" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-313"><a target="_blank" href="http://www.bnu.edu.cn/">北京师范大学</a></li>
+                        <li id="menu-item-314" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-314"><a target="_blank" href="http://youth.bnu.edu.cn/">共青团北京师范大学委员会</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="contact-us">
+                <li class="social">
+                    <div class="wechat">
+                        <i class="fa fa-weixin"></i>
+                        <div id="wechat-img">
+                            <img src="/static/img/wechat.jpg ">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p>联系我们</p>
+                    <table>
+                        <tr>
+                            <td>电话：</td>
+                            <td>010-58802178</td>
+                        </tr>
+                        <tr>
+                            <td>邮箱：</td>
+                            <td><a href="mailto:bnubaige@163.com">bnushsjb@163.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>地址：</td>
+                            <td>北京市海淀区新街口外大街19号
+                                <br/>北京师范大学邱季端体院馆1层
+                                <br/>校团委130办公室</td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </div>
+        <!-- .site-info -->
+    </div>
+</footer>
+
+<script type='text/javascript' src='/static/js/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='/static/js/jquery-migrate.min.js?ver=1.2.1'></script>
+
+{# 页面脚本 #} {% block js %}{% endblock %}
+</body>
+
+</html>

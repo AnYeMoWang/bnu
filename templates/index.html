@@ -1,0 +1,147 @@
+{% extends 'global/base.html' %} {% block title %} 首页 {% endblock %} {% block 3rd_css %}
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+</style>
+{% endblock %} 
+{% block bodyClass %}home page page-id-236 page-template-default group-blog{% endblock %}
+{% block content %}
+<main id="main" class="site-main homepage" role="main">
+    <article id="post-236" class="post-236 page type-page status-publish hentry">
+        <div class="huge_it_slideshow_image_wrap_1 nocolor">
+            <div id="huge_it_loading_image_1" class="display">
+                <img src="http://vol.bnu.edu.cn/baige/wp-content/plugins/slider-image/Front_images/loading/loading1.gif" />
+            </div>
+            <div class="huge_it_slideshow_image_wrap1_1 nodisplay">
+                <div class="huge_it_slideshow_dots_container_1">
+                    <div class="huge_it_slideshow_dots_thumbnails_1">
+                        <div id="huge_it_dots_0_1" class="huge_it_slideshow_dots_1 huge_it_slideshow_dots_active_1" onclick="huge_it_change_image_1(parseInt(jQuery('#huge_it_current_image_key_1').val()), '0', data_1,false,true);return false;" image_id="3" image_key="0"></div>
+                        <div id="huge_it_dots_1_1" class="huge_it_slideshow_dots_1 huge_it_slideshow_dots_deactive_1" onclick="huge_it_change_image_1(parseInt(jQuery('#huge_it_current_image_key_1').val()), '1', data_1,false,true);return false;" image_id="6" image_key="1"></div>
+                        <div id="huge_it_dots_2_1" class="huge_it_slideshow_dots_1 huge_it_slideshow_dots_deactive_1" onclick="huge_it_change_image_1(parseInt(jQuery('#huge_it_current_image_key_1').val()), '2', data_1,false,true);return false;" image_id="5" image_key="2"></div>
+                    </div>
+                    <a id="huge_it_slideshow_left_1" href="#">
+                        <div id="huge_it_slideshow_left-ico_1">
+                            <div><i class="huge_it_slideshow_prev_btn_1 fa"></i></div>
+                        </div>
+                    </a>
+                    <a id="huge_it_slideshow_right_1" href="#">
+                        <div id="huge_it_slideshow_right-ico_1 , data_1">
+                            <div><i class="huge_it_slideshow_next_btn_1 fa"></i></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="huge_it_slideshow_image_container_1" class="huge_it_slideshow_image_container_1">
+                    <div class="huge_it_slide_container_1">
+                        <div class="huge_it_slide_bg_1">
+                            <ul class="huge_it_slider_1">
+                                <li class="huge_it_slideshow_image_item_1" id="image_id_1_0"    style="margin-top:49px !important;">
+                                    <div class="banner">
+                                        <img src="/static/img/slide1.jpg">
+                                        <!-- <div class="logo">
+                                            <p>欢迎来到北京师范大学</p>
+                                            <h1>白鸽青年</h1>
+                                            <h2>志愿者协会</h2>
+                                        </div>
+                                        <div class="slogan">
+                                            <p>我的愿望是</p>
+                                            <h1>这世界变明亮</h1>
+                                        </div> -->
+                                    </div>
+                                </li>
+                                <li class="huge_it_slideshow_image_second_item_1" id="image_id_1_1" style="margin-top:49px !important;">
+                                    <img id="huge_it_slideshow_image_1" class="huge_it_slideshow_image_1" src="/static/img/slide2.jpg" image_id="6" />
+                                    <div class="huge_it_slideshow_title_text_1 none"></div>
+                                    <div class="huge_it_slideshow_description_text_1 none"></div>
+                                </li>
+                                <li class="huge_it_slideshow_image_second_item_1" id="image_id_1_2" style="margin-top:49px !important;">
+                                    <img id="huge_it_slideshow_image_1" class="huge_it_slideshow_image_1" src="/static/img/slide3.jpg" image_id="5" />
+                                    <!-- <div class="huge_it_slideshow_title_text_1 none"></div>
+                                    <div class="huge_it_slideshow_description_text_1 ">
+                                        白鸽 · 校园服务志愿者中心
+                                        <br> 与春天一同萌芽，让校园温暖美好
+                                    </div> -->
+                                </li>
+                                <input type="hidden" id="huge_it_current_image_key_1" value="0" />
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="activity">
+            <div class="container" style="margin-top:49px !important;">
+                <h2>最新动态</h2>
+                <div class="custom-hr">
+                    <div class="inset-hr">
+                        <div class="middle-logo"></div>
+                    </div>
+                </div>
+                <ul class="tab">
+                    <li class="active" id="post-5">全部</li>
+                    <li id="post-8">新闻</li>
+                    <li id="post-9">公告</li>
+                </ul>
+                <div class="post-content clear">
+                    <ul class="active post-5 posts">
+                        {% for trade in trades %}
+                        <li>
+                            <a href="/trade/article?id={{trade.id}}">
+                                <img width="200" height="160" src="{% if trade.get_first_img %}{{trade.get_first_img}}{% else %}/static/img/{% if trade.type == 1 %}news{% else %}notice{% endif %}-200x160.png{% endif %}" class="attachment-news wp-post-image" alt="news" />
+                                <h3 title="{{trade.title}}">{{trade.title|truncatechars:10}}</h3>
+                                <p>{{trade.get_first_content|truncatechars:25}}</p>
+                                <span class="time">{{trade.submit_time}}</span>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <ul class="posts post-8">
+                        {% for trade in news %}
+                        <li>
+                            <a href="/trade/article?id={{trade.id}}">
+                                <img width="200" height="160" src="{% if trade.get_first_img %}{{trade.get_first_img}}{% else %}/static/img/news-200x160.png{% endif %}" class="attachment-news wp-post-image" alt="news" />
+                                <h3 title="{{trade.title}}">{{trade.title|truncatechars:10}}</h3>
+                                <p>{{trade.get_first_content|truncatechars:25}}</p>
+                                <span class="time">{{trade.submit_time}}</span>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <ul class="posts post-9">
+                        {% for trade in notices %}
+                        <li>
+                            <a href="/trade/article?id={{trade.id}}">
+                                <img width="200" height="160" src="{% if trade.get_first_img %}{{trade.get_first_img}}{% else %}/static/img/notice-200x160.png{% endif %}" class="attachment-news wp-post-image" alt="news" />
+                                <h3 title="{{trade.title}}">{{trade.title|truncatechars:10}}</h3>
+                                <p>{{trade.get_first_content|truncatechars:25}}</p>
+                                <span class="time">{{trade.submit_time}}</span>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="custom-hr view-more">
+                    <div class="inset-hr">
+                        <a class="post-5 active" href="/trade">了解更多</a>
+                        <a class="post-8" href="/trade/?type=新闻">了解更多</a>
+                        <a class="post-9" href="/trade/?type=公告">了解更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
+{% endblock %} 
+{% block js %} 
+<script type='text/javascript' src='/static/js/baige.js?ver=4.3.1'></script>
+<script type='text/javascript' src='/static/js/index.js'></script>
+{% endblock %}

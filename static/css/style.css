@@ -1,0 +1,161 @@
+/*
+* styles for settings page
+*/
+.cptch_example_fields_actions {
+	float: left;
+    height: 18px;
+	width: 140px;
+	position: relative;
+	top: -7px;
+	padding: 2px 0;
+}
+.cptch_example_fields_actions img {
+	position: relative;
+	width: 30px;
+	top: 6px;
+}
+.cptch_block {
+	direction: ltr;
+}
+input.cptch_settings_input {
+    width: 252px;
+}
+.cptch_how_to_use {
+    float: right;
+}
+/*
+ * RTL styles
+ */
+.rtl .cptch_how_to_use {
+    float: left;
+}
+@media only screen and ( max-width: 480px ) {
+    .bws_help_box.cptch_thumb_block {
+        display: none;
+    }
+}
+/*
+* frontend styles
+*/
+.cptch_block label {
+    word-wrap: break-word;
+}
+.cptch_label:hover {
+    cursor: pointer;
+}
+form input.cptch_input {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.cptch_whitelist_message {
+    font-style: italic;
+    color: #008000;
+    font-weight: normal !important;
+}
+/* 课程卡片 */
+.box-list{
+    overflow:hidden;
+    margin:0 0 15px;
+    padding:0 0 15px;
+}
+    .box-list .box{
+        display:block;
+        overflow:hidden;
+        float:left;
+        margin:5px 2% 15px 0;
+        border:1px solid #eee;
+        width:31%;
+        height:150px;
+        box-shadow:2px 2px 2px #eee;
+        border-radius:3px;
+        cursor:pointer;
+        text-decoration:none;
+    }
+    .box-list .box .img-wrapper{
+        overflow:hidden;
+        float:left;
+        margin:0 10px 0 0;
+        padding:0;
+        width:120px;
+        height:150px;
+    }
+    .box-list .box .img-wrapper img{
+        display:block;
+        max-width:inherit;
+        height:100%;
+    }
+    .box-list .box .content{
+        overflow:hidden;
+        padding:5px;
+    }
+    .box-list .box .content h2{
+        margin:0;
+        padding:0;
+        color:#333;
+        font-size:14px;
+    }
+    .box-list .box .content p{
+        margin:0;
+        padding:0;
+        text-indent:2em;
+        font-size:12px;
+        color:#636363;
+    }
+    .box-list .box .content span{
+        margin:0;
+        padding:0;
+        font-size:12px;
+        color:#333;
+    }
+/* 课程列表 */
+.schedule-list-box,
+.schedule-list-box header,
+.schedule-list-box p,
+.schedule-list-box span,
+.schedule-list-box ul,
+.schedule-list-box li,
+.schedule-list-box h2,
+.schedule-list-box a{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.schedule-list-box .title{
+    margin:0 0 15px;
+}
+.schedule-list-box .content{}
+.schedule-list-box .list-header{
+    overflow:hidden;
+    padding:5px;
+    border-bottom:#ccc solid 1px;
+    font-size:12px;
+    color:#636363;
+}
+.schedule-list-box .list-header .download{
+    float:right;
+}
+.schedule-list-box .list{}
+.schedule-list-box .list li{
+    overflow:hidden;
+    border-bottom:#ccc solid 1px;
+}
+.schedule-list-box .list li.even{
+    background:#eee;
+}
+.schedule-list-box li a:hover{
+    background:#ccc;
+}
+.schedule-list-box .list li a{
+    display:block;
+    padding:12px 5px;
+    font-size:12px;
+    color:#333;
+    text-decoration:none;
+}
+.schedule-list-box .list li a span{
+    display:inline-block;
+    color:#fff;
+    font-size:12px;
+    line-height:12px;
+    background:red;
+}

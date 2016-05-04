@@ -1,0 +1,23 @@
+<div id="secondary" class="widget-area">
+	<aside id="categories-4" class="widget widget_categories">
+		<!-- <h1 class="widget-title">栏目</h1> -->
+		<ul>
+			<li class="cat-item {% if current_type == 'lesson' %}current-cat{% endif %}">
+				<a href="/share/lesson">网络课程</a>
+			</li>
+			<li class="cat-item {% if current_type == 'exercise' %}current-cat{% endif %}">
+				<a href="/share/exercise">实践风采</a>
+			</li>
+			<li class="cat-item {% if current_type == 'datum' %}current-cat{% endif %}">
+				<a href="/share/datum">支教资料库</a>
+				<div class="inner">
+					<a href="/share/datum/doc" class="{% if current_inner == 'doc' %}current{% endif %}">主题教案</a>
+					<a href="/share/datum/frame" class="{% if current_inner == 'frame' %}current{% endif %}">课程框架</a>
+				</div>
+			</li>
+			<li class="cat-item {% if current_type == 'downloads' %}current-cat{% endif %}">
+				<a href="/share/downloads">常用下载</a>
+			</li>		
+		</ul>
+	</aside>
+</div>

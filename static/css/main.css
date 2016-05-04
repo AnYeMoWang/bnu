@@ -1,0 +1,319 @@
+
+#huge_it_loading_image_1 {
+        height:300px;
+        width:1960px;
+        max-width:100%;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+     }
+      #huge_it_loading_image_1.display {
+        display: table-cell;
+     }
+      #huge_it_loading_image_1.nodisplay {
+        display: none;
+     }
+     #huge_it_loading_image_1 img {
+        margin: auto 0;
+        width: 20% !important;
+
+     }
+
+     .huge_it_slideshow_image_wrap_1 {
+        height:300px;
+        width:1960px;
+        max-width: 100%;
+        position:relative;
+        display: block;
+        text-align: center;
+        /*HEIGHT FROM HEADER.PHP*/
+        clear:both;
+                float:none; margin:0px auto;
+        border-style:solid;
+        border-left:0px !important;
+        border-right:0px !important;
+    }
+     .huge_it_slideshow_image_wrap1_1.display {
+         width: 100%;
+         height:100%;
+     }
+     .huge_it_slideshow_image_wrap1_1.display {
+         display:block;
+     }
+     .huge_it_slideshow_image_wrap1_1.nodisplay {
+         display:none;
+     }
+    .huge_it_slideshow_image_wrap_1 * {
+
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+
+      .huge_it_slideshow_image_1 {
+            /*width:100%;*/
+      }
+
+      #huge_it_slideshow_left_1,
+      #huge_it_slideshow_right_1 {
+        cursor: pointer;
+        display:none;
+        display: block;
+
+        height: 100%;
+        outline: medium none;
+        position: absolute;
+
+        /*z-index: 10130;*/
+        z-index: 13;
+        bottom:25px;
+        top:50%;        
+      }
+
+
+      #huge_it_slideshow_left-ico_1,
+      #huge_it_slideshow_right-ico_1 {
+        z-index: 13;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        cursor: pointer;
+        display: table;
+        left: -9999px;
+        line-height: 0;
+        margin-top: -15px;
+        position: absolute;
+        top: 50%;
+        /*z-index: 10135;*/
+      }
+      #huge_it_slideshow_left-ico_1:hover,
+      #huge_it_slideshow_right-ico_1:hover {
+        cursor: pointer;
+      }
+
+      .huge_it_slideshow_image_container_1 {
+
+        display: table;
+        position: relative;
+        top:0px;
+        left:0px;
+        text-align: center;
+        vertical-align: middle;
+        width:100%;
+      }   
+
+      .huge_it_slideshow_title_text_1 {
+        text-decoration: none;
+        position: absolute;
+        z-index: 11;
+        display: inline-block;
+
+    width:24%;
+/*height:44%;*/
+
+right:3%;top:3%;        padding:2%;
+        text-align:right;  
+        font-weight:bold;
+        color:#000000;
+
+        background:rgba(255,255,255,0.7)  !important;
+        border-style:solid;
+        font-size:13px;
+        border-width:0px;
+        border-color:#ffffff;
+        border-radius:4px;
+      }
+
+      .huge_it_slideshow_description_text_1 {
+        text-decoration: none;
+        position: absolute;
+        z-index: 11;
+        border-style:solid;
+        display: inline-block;
+
+    width:30%;
+/*height:40%;*/
+right:8%;bottom:16%;        padding:2% 3%;
+        text-align:justify;  
+        color:#ffffff;
+
+        background:rgba(0,0,0,0.7) !important;
+        border-style:solid;
+        font-size:13px;
+        border-width:0px;
+        border-color:#ffffff;
+        border-radius:0px;
+      }
+
+       .huge_it_slideshow_title_text_1.none, .huge_it_slideshow_description_text_1.none,
+       .huge_it_slideshow_title_text_1.hidden, .huge_it_slideshow_description_text_1.hidden    {display:none;}
+
+       .huge_it_slideshow_title_text_1 h1, .huge_it_slideshow_description_text_1 h1,
+       .huge_it_slideshow_title_text_1 h2, .huge_it_slideshow_title_text_1 h2,
+       .huge_it_slideshow_title_text_1 h3, .huge_it_slideshow_title_text_1 h3,
+       .huge_it_slideshow_title_text_1 h4, .huge_it_slideshow_title_text_1 h4,
+       .huge_it_slideshow_title_text_1 p, .huge_it_slideshow_title_text_1 p,
+       .huge_it_slideshow_title_text_1 strong,  .huge_it_slideshow_title_text_1 strong,
+       .huge_it_slideshow_title_text_1 span, .huge_it_slideshow_title_text_1 span,
+       .huge_it_slideshow_title_text_1 ul, .huge_it_slideshow_title_text_1 ul,
+       .huge_it_slideshow_title_text_1 li, .huge_it_slideshow_title_text_1 li {
+            padding:2px;
+            margin:0px;
+       }
+
+      .huge_it_slide_container_1 {
+        display: table-cell;
+        margin: 0 auto;
+        position: relative;
+        vertical-align: middle;
+        width:100%;
+        height:100%;
+        _width: inherit;
+        _height: inherit;
+      }
+      .huge_it_slide_bg_1 {
+        margin: 0 auto;
+        width:100%;
+        height:100%;
+        _width: inherit;
+        _height: inherit;
+      }
+      .huge_it_slider_1 {
+        width:100%;
+        height:100%;
+        display:table !important;
+        padding:0px !important;
+        margin:0px !important;
+
+      }
+      .huge_it_slideshow_image_item_1 {
+        width:100%;
+        height:100%;
+        _width: inherit;
+        _height: inherit;
+        display: table-cell;
+        filter: Alpha(opacity=100);
+        opacity: 1;
+        position: absolute;
+        top:0px !important;
+        left:0px !important;
+        vertical-align: middle;
+        z-index: 1;
+        margin:0px !important;
+        padding:0px  !important;
+        border-radius: 0px !important;
+      }
+      .huge_it_slideshow_image_second_item_1 {
+        width:100%;
+        height:100%;
+        _width: inherit;
+        _height: inherit;
+        display: table-cell;
+        filter: Alpha(opacity=0);
+        opacity: 0;
+        position: absolute;
+        top:0px !important;
+        left:0px !important;
+        vertical-align: middle;
+        overflow:hidden;
+        margin:0px !important;
+        visibility:visible !important;
+        padding:0px  !important;
+        border-radius: 0px !important;
+      }
+
+       .huge_it_slideshow_image_second_item_1 a, .huge_it_slideshow_image_item_1 a {
+            display:block;
+            width:100%;
+            height:100%;    
+       }
+
+      .huge_it_grid_1 {
+        display: none;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+      }
+      .huge_it_gridlet_1 {
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        position: absolute;
+      }
+
+
+      .huge_it_slideshow_dots_container_1 {
+        display: table;
+        position: absolute;
+        width:100% !important;
+        height:100% !important;
+      }
+      .huge_it_slideshow_dots_thumbnails_1 {
+        margin: 0 auto;
+        overflow: hidden;
+        position: absolute;
+        width:100%;
+        height:30px;
+      }
+
+      .huge_it_slideshow_dots_1 {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.1) inset, 1px 1px 1px rgba(255,255,255,0.1);
+        width:10px;
+        height: 10px;
+        border-radius: 10px;
+        background: #00f;
+        margin: 10px;
+        overflow: hidden;
+        z-index: 17;
+      }
+
+      .huge_it_slideshow_dots_active_1 {
+        opacity: 1;
+        filter: Alpha(opacity=100);
+      }
+      .huge_it_slideshow_dots_deactive_1 {
+
+      }
+
+
+
+        .huge_it_slideshow_image_wrap_1 {
+            background:#ffffff;
+            border-width:0px;
+            border-color:#ffffff;
+            border-radius:0px;
+        }
+        .huge_it_slideshow_image_wrap_1.nocolor {
+          
+            background: transparent;
+        }
+        .huge_it_slideshow_dots_thumbnails_1 {
+            bottom:16px;
+}
+
+.huge_it_slideshow_dots_1 {
+    background:#000000;
+}
+
+.huge_it_slideshow_dots_active_1 {
+    background:#ffffff;
+}
+
+                    #huge_it_slideshow_left_1 { 
+                        left:30px;
+                        margin-top:-21px;
+                        height:43px;
+                        width:29px;
+                        background:url(http://vol.bnu.edu.cn/baige/wp-content/plugins/slider-image/Front_images/arrows/arrows.simple.png) left  top no-repeat; 
+                    }
+
+                    #huge_it_slideshow_right_1 {
+                        right:30px;
+                        margin-top:-21px;
+                        height:43px;
+                        width:29px;
+                        background:url(http://vol.bnu.edu.cn/baige/wp-content/plugins/slider-image/Front_images/arrows/arrows.simple.png) right top no-repeat; 
+                    }
