@@ -11,7 +11,7 @@ admin.autodiscover()
 
 
 urlpatterns = [
-    url(r'^admin', include(admin.site.urls)),
+    url(r'^!bnu404~', include(admin.site.urls)),
     url(r'^$', index, name='index'),
     url(r'^index$', index),
     url(r'^grappelli/', include('grappelli.urls')),
@@ -22,6 +22,10 @@ urlpatterns = [
     url(
         r'^media/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root': settings.MEDIA_ROOT}
+    ),
+    url(
+        r'^static/(?P<path>.*)$', 'django.views.static.serve',
+        {'document_root': settings.STATIC_ROOT}
     )
 ]
 
